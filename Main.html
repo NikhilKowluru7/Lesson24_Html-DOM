@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My favourtie football players</title>
+    <style>
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:gold;
+            background-color: black;
+            text-align: center;
+            padding: 10px;
+            margin: 15px;
+        }
+        #football{
+            border: 3px solid ;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .footballers{
+            padding: 3px;
+        }
+        #btn{
+            padding:4px;
+            margin: 10px;
+            background-color:gold;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My favourite footballers</h1>
+    <div id="football">
+        <div class="footballers">1. <span id="fav1"></span></div>
+        <div class="footballers">2. <span id="fav2"></span></div>
+        <div class="footballers">3. <span id="fav3"></span></div>
+        <div class="footballers">Total: <span id="total"></span></div>
+    </div>
+    <button id = "btn" onclick = "clickbtn()">Click me!</button>
+    <script>
+        function clickbtn(){
+            document.getElementById("football").style.backgroundColor = "blue";
+            document.getElementById("fav1").innerHTML = "Kylian Mbappe";
+            document.getElementById("fav2").innerHTML = "Jude Bellingham";
+            document.getElementById("fav3").innerHTML = "Cristiano Ronaldo";
+            document.getElementById("total").innerHTML="3";
+        }
+    </script>
+</body>
+</html>
